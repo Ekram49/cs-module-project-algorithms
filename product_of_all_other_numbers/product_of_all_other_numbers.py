@@ -2,10 +2,13 @@
 Input: a List of integers
 Returns: a List of integers
 '''
+import numpy as np
 def product_of_all_other_numbers(arr):
-    # Your code here
+    res = []
+    for i in range(len(arr)):
+        res.append((np.prod(arr)) // arr[i])
+    return res
 
-    pass
 
 
 if __name__ == '__main__':
